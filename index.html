@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Slip</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>My Shop Slip</h1>
+
+    <input type="text" id="itemName" placeholder="Name...">
+    <input type="number" id="itemPrice" placeholder="Price...">
+    <br><br>
+    <button onclick="addItemToList()">Add item in the List</button>
+    <button onclick="removeClear()" type="reset">Clear</button>
+
+    <div class="list" id="list"></div>
+    <h3 id="total">Total: R0</h3>
+    <hr>
+    <input type="number" id="clientMoney" placeholder="Client Money">
+    <br><br>
+    <button onclick="calculateClientChange()">Calculate Client Change</button>
+    <h3 id="clientChange">Client Change: R0</h3>
+
+    <script src="./scripts.js"></script>
+</body>
+</html>
